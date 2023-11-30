@@ -1,0 +1,51 @@
+.auth-form {
+  padding: 0px !important;
+  overflow-x: hidden;
+}
+.auth-form .right {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.auth-form .right .logo-area {
+  margin-bottom: 20px;
+}
+.auth-form .right .logo-area .logo {
+  max-width: 200px;
+}
+.auth-form .right .form-input {
+  max-width: 300px;
+  min-width: 300px;
+  margin-bottom: 15px;
+}
+.auth-form .right .form-input:hover {
+  outline: none;
+}
+.auth-form .right .auth-btn {
+  background-color: #d61200;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 7px 15px;
+  display: flex;
+  align-items: center;
+}
+.auth-form .right .sub-link-description {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.auth-form .right .sub-link-description span {
+  color: #d61200;
+  cursor: pointer;
+}
+.auth-form .left {
+  background-image: url(../imgs/jng-auth-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100vh;
+}/*# sourceMappingURL=auth_forms.css.map */

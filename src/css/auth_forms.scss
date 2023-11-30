@@ -1,0 +1,64 @@
+$theme_red : #d61200;
+
+.auth-form {
+    padding: 0px !important;
+    overflow-x: hidden;
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+        .logo-area {
+
+            margin-bottom: 20px;
+
+            .logo {
+                max-width: 200px;
+            }
+
+        }
+
+        .form-input {
+            max-width: 300px;
+            min-width: 300px;
+            margin-bottom: 15px;
+
+            &:hover{
+                outline: none;
+
+            }
+        }
+
+        .auth-btn {
+            background-color: $theme_red;
+            color: white;
+            font-size: 13px;
+            border-radius: 5px;
+            padding: 7px 15px;
+            display: flex;
+            align-items: center;
+        }
+        .sub-link-description{
+            font-size: 12px;
+            margin-top: 15px;
+
+            span{
+                color: $theme_red;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .left {
+        background-image: url(../imgs/jng-auth-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 100%;
+        min-height: 100vh;
+    }
+}

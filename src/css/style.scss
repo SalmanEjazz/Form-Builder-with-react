@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$theme_bg_grey : #fbfbfd;
+$theme_blue_color :#006EDB;
+$theme_hover_light_bg : #006edb25;
+$theme_light_grey: #d5d5d5;
+$theme_dark_grey :#727272;
+$theme_white : white;
+$theme_red : rgb(243, 36, 0);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $theme_bg_grey !important;
+}
+
+
+@mixin regular_font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@mixin flex_space_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin modal_common {
+    margin: auto;
+    background: white;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.ga-card-apqp {
+    padding: 20px !important;
+    margin-bottom: 20px;
+    @include regular_font();
+
+    label {
+
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .icons-with-actions {
+        display: flex;
+        justify-content: end;
+        font-size: 14px;
+        gap: 5px;
+
+        .icon {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            color: $theme_blue_color;
+            padding: 5px 10px;
+
+            &:hover {
+                border-radius: 10px;
+                background-color: $theme_hover_light_bg;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    .note-text {
+
+        margin: 10px 0px;
+
+        p {
+            @include regular_font();
+            font-size: 14px;
+        }
+
+    }
+
+    .add-notes {
+        margin-top: 15px;
+
+        .btns-box {
+            @include flex_space_between();
+        }
+
+        .save-btn,
+        .cancel-btn {
+            margin-top: 10px;
+        }
+
+        .save-btn {
+            // background-color: $theme_blue_color;
+        }
+
+        .cancel-btn {
+            margin-left: 10px;
+        }
+
+        .delete-btn {
+            // margin-left: auto;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+
+
+    }
+
+
+    .map {
+        @include flex_space_between();
+        gap: 10px;
+    }
+
+    .signature {
+        button {
+            padding: 5px 20px;
+        }
+
+    }
+
+    .signature-img {
+
+        margin-top: 10px;
+        @include flex_space_between();
+
+        img {
+
+            max-width: 60px;
+            max-height: 90px;
+        }
+
+        .icon {
+            width: 25px;
+        }
+
+
+
+    }
+
+    .ga-yes-no-field {
+        .ga-yes-no-btns {
+
+            display: flex;
+            gap: 10px;
+
+            button {
+                padding: 7px 30px;
+            }
+
+            .yes {
+                background: $theme_blue_color;
+                color: $theme_white;
+            }
+
+            .no {
+
+                background: $theme_red;
+                color: $theme_white;
+                border-color: $theme_red;
+
+            }
+        }
+    }
+
+
+}
+
+.apqp-drawer {
+
+    .MuiDrawer-paper {
+        min-width: 300px !important;
+        padding: 10px 15px !important;
+    }
+
+    .ga-field {
+        margin-bottom: 15px;
+        @include regular_font();
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .date-time-picker {
+            min-width: 100%;
+        }
+    }
+
+    .close-icon-box {
+        display: flex;
+        justify-content: end;
+
+        .close-icon-btn {
+            color: $theme_blue_color;
+
+        }
+
+    }
+
+
+}
+
+.ga-modal {
+    padding-top: 5rem;
+
+
+    .modal-upper {
+        @include flex_space_between();
+
+        .close-icon-btn {
+            color: $theme_blue_color;
+        }
+    }
+
+
+    .modal-box-map {
+
+        @include modal_common();
+
+        max-width: 700px;
+
+
+        @include regular_font();
+
+
+        .map-fields {
+            @include flex_space_between();
+            gap: 10px;
+
+
+        }
+
+        .modal-head {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .modal-box-signature {
+        max-width: 400px;
+        @include regular_font();
+        @include modal_common();
+
+
+        label {
+            min-width: 100%;
+            padding: 10px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            font-size: 15px;
+            color: $theme_blue_color;
+            @include regular_font();
+
+            &:hover {
+                background-color: $theme_hover_light_bg;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            .icon {
+                font-size: 20px;
+                // margin: auto;
+            }
+        }
+    }
+}
+
+.ga-accordion {
+
+    margin-bottom: 15px;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    &::before {
+        content: none !important;
+    }
+
+    .ga-accordion-detail {
+        padding: 15px 0px;
+        padding-bottom: 0px;
+    }
+
+    .ga-accordion-head {
+        background-color: $theme_blue_color;
+        color: $theme_white;
+        border-radius: 10px;
+
+
+
+        svg {
+            fill: $theme_white;
+        }
+    }
+}
+
+.checklistdropdown {
+    .chip {
+        background-color: $theme_blue_color;
+    }
+
+    .option {
+        &:hover {
+            background-color: $theme_blue_color;
+        }
+    }
+
+    .highlightOption {
+        background-color: $theme_blue_color;
+    }
+}
+
+.signature-section {
+
+
+    .signature-pad {
+        border: 1px solid black;
+        border-radius: 5px;
+        max-width: fit-content;
+        max-height: fit-content;
+
+
+        canvas {
+            min-width: 100% !important;
+            width: 100%;
+            margin: auto;
+        }
+
+    }
+
+    .signature-btns {
+        display: flex;
+        margin-top: 15px;
+        gap: 10px;
+    }
+}
+
+
+.steps-header {
+    background-color: white !important;
+    box-shadow: 0px 1px 2px #a0a0a0;
+
+    .head {
+        color: black;
+        @include regular_font();
+        font-size: 20px;
+    }
+}
+
+.dashboard-sidebar {
+    @include regular_font();
+    .MuiDrawer-paper {
+
+        max-width: 300px;
+        min-width: 250px !important;
+    
+        .logo{
+            max-width: 200px;
+            margin: 0px auto;
+        }
+    
+    
+    }
+
+}
+
+// Step Pages
+
+.page-step-section{
+    padding-bottom: 20px;
+    .next-step-btn{
+        float: right;
+    }
+    .content{
+        border: 1px solid $theme_light_grey;
+        margin-bottom: 20px;
+        @include regular_font();
+        padding: 10px 15px;
+
+        // font-weight: 400;
+
+        .page-title{
+            font-size: 16px;
+
+        }
+        .number-of-page{
+            font-size: 13px;
+            color:$theme_dark_grey;
+            font-weight: 400;
+        }
+    }
+}
+.apqp-container{
+    .next-step-btn{
+        margin-bottom: 50px;
+    }
+}
+
+.report-page{
+    @include regular_font();
+    padding: 30px 0px;
+    .report-logo{
+        max-width: 250px;
+    }
+    .head{
+  
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    .questionAnswerCard{
+        margin-top: 15px;
+        
+
+        h6{
+            font-size: 15px ;
+            font-weight: 400;
+            color: $theme_dark_grey;
+        }
+        .answer{
+            font-size: 18px ;
+            font-weight: 400;
+        }
+        .note{
+            font-size: 12px;
+            color: $theme_dark_grey;
+        }
+        .signature-area{
+            img{
+                max-width: 100px;
+            }
+        }
+    }
+}
+.answers-section-ga{
+    margin: 15px 0px;
+
+    
+}

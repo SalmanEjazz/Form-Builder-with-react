@@ -1,0 +1,21 @@
+.dashboard-create-apqp-template .page-btns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+}
+.dashboard-create-apqp-template .page-btns .add-page-btn {
+  max-width: 40px;
+  color: rgb(0, 175, 0);
+}
+.dashboard-create-apqp-template .page-btns .delete-page-btn {
+  color: red;
+}
+.dashboard-create-apqp-template .section-area {
+  border: 1px solid rgb(0, 175, 0);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.dashboard-create-apqp-template .section-area .title {
+  font-size: 18px;
+}/*# sourceMappingURL=dashboard.css.map */

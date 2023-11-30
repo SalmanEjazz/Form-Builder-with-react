@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fbfbfd !important;
+}
+
+.ga-card-apqp {
+  padding: 20px !important;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.ga-card-apqp label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.ga-card-apqp .icons-with-actions {
+  display: flex;
+  justify-content: end;
+  font-size: 14px;
+  gap: 5px;
+}
+.ga-card-apqp .icons-with-actions .icon {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #006EDB;
+  padding: 5px 10px;
+}
+.ga-card-apqp .icons-with-actions .icon:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 110, 219, 0.1450980392);
+  cursor: pointer;
+}
+.ga-card-apqp .note-text {
+  margin: 10px 0px;
+}
+.ga-card-apqp .note-text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.ga-card-apqp .add-notes {
+  margin-top: 15px;
+}
+.ga-card-apqp .add-notes .btns-box {
+  display: flex;
+  justify-content: space-between;
+}
+.ga-card-apqp .add-notes .save-btn,
+.ga-card-apqp .add-notes .cancel-btn {
+  margin-top: 10px;
+}
+.ga-card-apqp .add-notes .cancel-btn {
+  margin-left: 10px;
+}
+.ga-card-apqp .add-notes .delete-btn {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.ga-card-apqp .map {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ga-card-apqp .signature button {
+  padding: 5px 20px;
+}
+.ga-card-apqp .signature-img {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.ga-card-apqp .signature-img img {
+  max-width: 60px;
+  max-height: 90px;
+}
+.ga-card-apqp .signature-img .icon {
+  width: 25px;
+}
+.ga-card-apqp .ga-yes-no-field .ga-yes-no-btns {
+  display: flex;
+  gap: 10px;
+}
+.ga-card-apqp .ga-yes-no-field .ga-yes-no-btns button {
+  padding: 7px 30px;
+}
+.ga-card-apqp .ga-yes-no-field .ga-yes-no-btns .yes {
+  background: #006EDB;
+  color: white;
+}
+.ga-card-apqp .ga-yes-no-field .ga-yes-no-btns .no {
+  background: rgb(243, 36, 0);
+  color: white;
+  border-color: rgb(243, 36, 0);
+}
+
+.apqp-drawer .MuiDrawer-paper {
+  min-width: 300px !important;
+  padding: 10px 15px !important;
+}
+.apqp-drawer .ga-field {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.apqp-drawer .ga-field label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.apqp-drawer .ga-field .date-time-picker {
+  min-width: 100%;
+}
+.apqp-drawer .close-icon-box {
+  display: flex;
+  justify-content: end;
+}
+.apqp-drawer .close-icon-box .close-icon-btn {
+  color: #006EDB;
+}
+
+.ga-modal {
+  padding-top: 5rem;
+}
+.ga-modal .modal-upper {
+  display: flex;
+  justify-content: space-between;
+}
+.ga-modal .modal-upper .close-icon-btn {
+  color: #006EDB;
+}
+.ga-modal .modal-box-map {
+  margin: auto;
+  background: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 700px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.ga-modal .modal-box-map .map-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ga-modal .modal-box-map .modal-head {
+  margin-bottom: 10px;
+}
+.ga-modal .modal-box-signature {
+  max-width: 400px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: auto;
+  background: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 15px;
+}
+.ga-modal .modal-box-signature label {
+  min-width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 15px;
+  color: #006EDB;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.ga-modal .modal-box-signature label:hover {
+  background-color: rgba(0, 110, 219, 0.1450980392);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.ga-modal .modal-box-signature label .icon {
+  font-size: 20px;
+}
+
+.ga-accordion {
+  margin-bottom: 15px;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.ga-accordion::before {
+  content: none !important;
+}
+.ga-accordion .ga-accordion-detail {
+  padding: 15px 0px;
+  padding-bottom: 0px;
+}
+.ga-accordion .ga-accordion-head {
+  background-color: #006EDB;
+  color: white;
+  border-radius: 10px;
+}
+.ga-accordion .ga-accordion-head svg {
+  fill: white;
+}
+
+.checklistdropdown .chip {
+  background-color: #006EDB;
+}
+.checklistdropdown .option:hover {
+  background-color: #006EDB;
+}
+.checklistdropdown .highlightOption {
+  background-color: #006EDB;
+}
+
+.signature-section .signature-pad {
+  border: 1px solid black;
+  border-radius: 5px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+.signature-section .signature-pad canvas {
+  min-width: 100% !important;
+  width: 100%;
+  margin: auto;
+}
+.signature-section .signature-btns {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.steps-header {
+  background-color: white !important;
+  box-shadow: 0px 1px 2px #a0a0a0;
+}
+.steps-header .head {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.dashboard-sidebar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.dashboard-sidebar .MuiDrawer-paper {
+  max-width: 300px;
+  min-width: 250px !important;
+}
+.dashboard-sidebar .MuiDrawer-paper .logo {
+  max-width: 200px;
+  margin: 0px auto;
+}
+
+.page-step-section {
+  padding-bottom: 20px;
+}
+.page-step-section .next-step-btn {
+  float: right;
+}
+.page-step-section .content {
+  border: 1px solid #d5d5d5;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+.page-step-section .content .page-title {
+  font-size: 16px;
+}
+.page-step-section .content .number-of-page {
+  font-size: 13px;
+  color: #727272;
+  font-weight: 400;
+}
+
+.apqp-container .next-step-btn {
+  margin-bottom: 50px;
+}
+
+.report-page {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 30px 0px;
+}
+.report-page .report-logo {
+  max-width: 250px;
+}
+.report-page .head {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.report-page .questionAnswerCard {
+  margin-top: 15px;
+}
+.report-page .questionAnswerCard h6 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #727272;
+}
+.report-page .questionAnswerCard .answer {
+  font-size: 18px;
+  font-weight: 400;
+}
+.report-page .questionAnswerCard .note {
+  font-size: 12px;
+  color: #727272;
+}
+.report-page .questionAnswerCard .signature-area img {
+  max-width: 100px;
+}
+
+.answers-section-ga {
+  margin: 15px 0px;
+}/*# sourceMappingURL=style.css.map */

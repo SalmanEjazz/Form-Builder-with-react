@@ -1,0 +1,35 @@
+$theme_green : rgb(0, 175, 0);
+$theme_red : red;
+
+
+.dashboard-create-apqp-template{
+
+    .page-btns{
+
+        margin-top: 10px;
+        display: flex;
+        justify-content: end;
+   
+    .add-page-btn{
+        max-width: 40px;
+        
+     
+        color: $theme_green;
+    } 
+    .delete-page-btn{
+        color: $theme_red;
+    }
+}
+
+
+.section-area{
+    border: 1px solid $theme_green;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+
+    .title{
+        font-size: 18px;
+    }
+}
+}
